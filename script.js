@@ -6,13 +6,13 @@
     function randomCard() {
         const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
         let card = cards[Math.floor(Math.random() * cards.length)];
-        delete card;
-        console.log(cards);
-        document.getElementById("card"+ n).innerHTML = card;
         userCards.push(card);
+        let imageCard = "url(images/playing-card-" + Number(card) + ".png)";
+        document.getElementById("card-"+ n).style.backgroundImage = imageCard;
         n++;
         getSum();
         document.getElementById("getCard").innerHTML = "Pick a new card";
+        delete card;
     }
 
     document.getElementById("getCard").addEventListener("click", randomCard);
