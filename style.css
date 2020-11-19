@@ -3,11 +3,48 @@
     padding: 0;
 }
 
+body {
+background-color: darkgreen;
+}
+
+.intro {
+text-align: center;
+color: white;
+font-size: 40px;
+}
+
+.buttons {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 40px 0;
+}
+
+.buttons > * {
+  width: 100px;
+  height: 50px;
+
+}
+
+.main {
+  display: flex;
+
+}
+
+.container {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.dealer {
+  width: 50%;
+  margin-left: 50px;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    height: 260px;
+    height: 230px;
     background-color: transparent;
     background-image: url("images/playing-card.jpg");
     background-size: contain;
@@ -17,8 +54,11 @@
 
   .column {
     float: left;
-    width: 15%;
+    width: 25%;
     padding: 0 10px;
   }
 
-  .row {margin: 0 -5px;}
+  .row {
+    margin: 10px 5px;
+  }
+

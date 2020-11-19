@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Blackjack Card Game </title>
-</head>
-<body>
 
-    <div class="container"> 
-<button id="getCard"> Get Card </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Blackjack Card Game </title>
+</head>
+
+<body>
+  <div class="intro">
+  <h1> Welcome to the Black Jack Table </h1>
+  <p>Beat the dealer but don't go over 21 otherwise you lose!</p>  </div>
+  <div class="buttons">
+    <button id="getCard"> HIT </button>
     <button id="stopTurn"> Stop Turn </button>
     <button id="newGame"> New Game </button>
+  </div>
+  <div class="main"> 
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="card" id="card-1">
+          <p id="card1"> </p>
+        </div>
+      </div>
 
-<div class="row">
-    <div class="column">
-      <div class="card" id="card-1">
-        <p id="card1"> </p>
+      <div class="column">
+        <div class="card" id="card-2">
+          <p id="card2"> </p>
+        </div>
       </div>
-    </div>
-  
-    <div class="column">
-      <div class="card" id="card-2">
-        <p id="card2"> </p>
+
+      <div class="column">
+        <div class="card" id="card-3">
+          <p id="card3"> </p>
+        </div>
       </div>
-    </div>
-    
-    <div class="column">
-      <div class="card" id="card-3">
-        <p id="card3"> </p>
+
+
+      <div class="column">
+        <div class="card" id="card-4">
+          <p id="card4"> </p>
+        </div>
       </div>
-    </div>
-    
-    <div class="column">
-      <div class="card" id="card-4">
-        <p id="card4"> </p>
-      </div>
-    </div>
-    <div class="column">
+      <div class="column">
         <div class="card" id="card-5">
           <p id="card5"> </p>
         </div>
@@ -47,13 +54,49 @@
           <p id="card6"> </p>
         </div>
       </div>
+    </div>
+
+  </div>
+  <div class="dealer">
+    <div class="row">
+      <div class="column">
+        <div class="card" id="dealer-1">
+          <p id=""> </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card" id="dealer-2">
+          <p id=""> </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card" id="dealer-3">
+          <p id=""> </p>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="card" id="dealer-4">
+          <p id=""> </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="dealer-5">
+          <p id=""> </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card" id="dealer-6">
+          <p id=""> </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-<div>
-
-     </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
