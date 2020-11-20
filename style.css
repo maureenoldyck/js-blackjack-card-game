@@ -1,3 +1,5 @@
+/** Properties for the whole page **/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,63 @@
 
 body {
 background-color: #59886b;
+font-family: 'Playfair Display', serif;
 }
+
+/** Properties for the images **/
+
+.image1 {
+  position: absolute;
+  width: 5%;
+left: 60px;
+top: 50px;
+transform: rotate(20deg);
+}
+
+.image7 {
+  position: absolute;
+  width: 5%;
+left: 20px;
+bottom: -10px;
+transform: rotate(-20deg);
+}
+
+
+.image5 {
+  position: absolute;
+  width: 5%;
+right: 180px;
+bottom: 10px;
+transform: rotate(20deg);
+}
+
+.image6 {
+  position: absolute;
+  width: 5%;
+left: 80px;
+top: 350px;
+transform: rotate(20deg);
+}
+
+.image2 {
+  position: absolute;
+  width: 5%;
+right: 60px;
+top: 50px;
+}
+
+.image8 {
+  position: absolute;
+  width: 5%;
+right: 60px;
+top: 350px;
+transform: rotate(-10deg);
+
+}
+
+
+
+/** Properties for the text in the middle **/
 
 .intro {
 text-align: center;
@@ -14,11 +72,18 @@ font-size: 20px;
 margin-bottom: 50px;
 }
 
+.intro > p {
+  font-style: italic;
+  font-size: 18px;
+}
+
 
 text {
   fill:white;
   font-size: 15px;
 }
+
+/** Properties for the buttons on the bottom **/
 
 .buttons {
 display: flex;
@@ -70,10 +135,36 @@ color: white;
 }
 
 
+
+/** Shared properties for all cards **/ 
+.card {
+  padding: 46px;
+  text-align: center;
+  background-color: transparent;
+  background-image: url("images/playing-card.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.column{
+  float: left;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 10px 5px;
+}
+
+
+/** Properties for the players cards **/
+
+
 .main {
   display: flex;
   justify-content: space-between;
 }
+
 
 .container-left {
   margin-left: 200px;
@@ -83,6 +174,9 @@ color: white;
   margin-right: 200px;
 }
 
+
+/** Properties for the dealer cards **/ 
+
 .dealer {
   display: flex;
   justify-content: center;
@@ -90,21 +184,17 @@ color: white;
 }
 
 
-.card {
-    padding: 46px;
+
+/** Properties for footer text **/
+
+
+  footer {
     text-align: center;
-    background-color: transparent;
-    background-image: url("images/playing-card.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    color: white;
+    font-size: 10px;
   }
 
-
-  .column{
-    float: left;
-    padding: 0 10px;
-  }
-
-  .row {
-    margin: 10px 5px;
+  a {
+    text-decoration: none;
+    color: white;
   }
