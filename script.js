@@ -24,7 +24,6 @@
         document.getElementById("card-" + n).style.backgroundImage = imageCard;
         n++;
         getSum();
-        delete card;
     }
 
 
@@ -37,7 +36,7 @@
         if (sumCards == 21) {
             alert("That's 21!! Wow, great, you win!")
         } else if (sumCards > 21) {
-            alert("That's more than 21... You Lose!")
+            alert("Bust! That's more than 21... You Lose!")
         }
     }
 

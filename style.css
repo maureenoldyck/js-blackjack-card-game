@@ -4,47 +4,95 @@
 }
 
 body {
-background-color: darkgreen;
+background-color: #59886b;
 }
 
 .intro {
 text-align: center;
 color: white;
-font-size: 40px;
+font-size: 20px;
+margin-bottom: 50px;
+}
+
+
+text {
+  fill:white;
+  font-size: 15px;
 }
 
 .buttons {
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: center;
 margin: 40px 0;
+border: transparent;
 }
 
-.buttons > * {
-  width: 100px;
-  height: 50px;
+.blue {
+  width: 80px;
+  height: 80px;
+  background-image: url("images/blueChip.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+background-color: transparent;
+border: transparent;
+margin-right: 10px;
+color: white;
+
 
 }
+
+.red {
+  width: 80px;
+  height: 80px;
+background-image: url("images/redChip.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-color: transparent;
+border: transparent;
+color: white;
+
+
+
+}
+
+.black {
+  width: 80px;
+  height: 80px;
+background-image: url("images/blackChip.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-color: transparent;
+border: transparent;
+margin-left: 10px;
+color: white;
+
+}
+
 
 .main {
   display: flex;
-
+  justify-content: space-between;
 }
 
-.container {
-  width: 50%;
-  margin-left: 50px;
+.container-left {
+  margin-left: 200px;
+}
+
+.container-right {
+  margin-right: 200px;
 }
 
 .dealer {
-  width: 50%;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
 }
 
+
 .card {
-    padding: 16px;
+    padding: 46px;
     text-align: center;
-    height: 230px;
     background-color: transparent;
     background-image: url("images/playing-card.jpg");
     background-size: contain;
@@ -52,13 +100,11 @@ margin: 40px 0;
   }
 
 
-  .column {
+  .column{
     float: left;
-    width: 25%;
     padding: 0 10px;
   }
 
   .row {
     margin: 10px 5px;
   }
-
