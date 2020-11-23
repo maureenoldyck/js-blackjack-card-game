@@ -43,4 +43,3 @@ For this exercise we had to recreate the classic BlackJack cardgame with Javascr
 ## 🐜  Bugs in my game 
 
 - The picture cards are not used in my game, they are replaced with the card 10
-- The Alert box comes before you actually see the cards that make you lose or win

@@ -30,7 +30,7 @@
         // Remove drawn card from pool
         const index = cards.indexOf(Number(card));
         cards.splice(index, 1);
-        
+
         getSum();
     }
 
@@ -42,9 +42,9 @@
             sum + currentValue);
 
         if (sumCards == 21) {
-            alert("That's 21!! Wow, great, you win!")
+            setTimeout(function(){  alert("That's 21!! Wow, great, you win!"); }, 300);
         } else if (sumCards > 21) {
-            alert("Bust! That's more than 21... You Lose!")
+            setTimeout(function(){   alert("Bust! That's more than 21... You Lose!"); }, 300);
         }
     }
 
@@ -78,11 +78,10 @@
         } else if (sumDealer < sumCards) {
             dealerCard();
         } else if (sumDealer == 21 || sumDealer == sumCards || sumDealer > sumCards && sumDealer < 21) {
-            alert("Dealer wins! That means you lose... \nYou had " + sumCards + ". Dealer had " + sumDealer +".");
+            setTimeout(function(){ alert("Dealer wins! That means you lose... \nYou had " + sumCards + ". Dealer had " + sumDealer +".");}, 300);
         } else {
-            alert("You win! Great job! \nYou had " + sumCards + ". Dealer had " + sumDealer + ".");
+            setTimeout(function(){  alert("You win! Great job! \nYou had " + sumCards + ". Dealer had " + sumDealer + ".");}, 300);
         }
-
     }
 
 
