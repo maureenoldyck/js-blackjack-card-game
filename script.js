@@ -7,6 +7,8 @@
     let sumCards;
     let sumDealer;
     let dealerCards = [];
+    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const cardsDealer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     // event listeners
     document.getElementById("getCard").addEventListener("click", randomCard);
@@ -17,12 +19,18 @@
 
     // Function to get a random card  
     function randomCard() {
-        const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
         let card = cards[Math.floor(Math.random() * cards.length)];
         userCards.push(card);
+
+        //Get the card image that belongs to the random card
         let imageCard = "url(images/playing-card-" + Number(card) + ".png)";
         document.getElementById("card-" + n).style.backgroundImage = imageCard;
         n++;
+
+        // Remove drawn card from pool
+        const index = cards.indexOf(Number(card));
+        cards.splice(index, 1);
+        
         getSum();
     }
 
@@ -43,12 +51,18 @@
 
     // Function to get random cards for the dealer
     function dealerCard() {
-        const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10];
-        let card = cards[Math.floor(Math.random() * cards.length)];
+        let card = cardsDealer[Math.floor(Math.random() * cards.length)];
         dealerCards.push(card);
+        
+         //Get the card image that belongs to the random card
         let imageCard = "url(images/playing-card-" + Number(card) + ".png)";
         document.getElementById("dealer-" + d).style.backgroundImage = imageCard;
         d++;
+
+        // Remove drawn card from pool
+        const index = cardsDealer.indexOf(Number(card));
+        cardsDealer.splice(index, 1);
+
         dealersTurn();
     }
 
