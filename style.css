@@ -1,13 +1,13 @@
 /** Properties for the whole page **/
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-background-color: #59886b;
-font-family: 'Playfair Display', serif;
+  background-color: #59886b;
+  font-family: 'Playfair Display', serif;
 }
 
 /** Properties for the images **/
@@ -15,49 +15,49 @@ font-family: 'Playfair Display', serif;
 .image1 {
   position: absolute;
   width: 5%;
-left: 60px;
-top: 50px;
-transform: rotate(20deg);
+  left: 60px;
+  top: 50px;
+  transform: rotate(20deg);
 }
 
 .image7 {
   position: absolute;
   width: 5%;
-left: 20px;
-bottom: -10px;
-transform: rotate(-20deg);
+  left: 20px;
+  bottom: -10px;
+  transform: rotate(-20deg);
 }
 
 
 .image5 {
   position: absolute;
   width: 5%;
-right: 180px;
-bottom: 10px;
-transform: rotate(20deg);
+  right: 180px;
+  bottom: 10px;
+  transform: rotate(20deg);
 }
 
 .image6 {
   position: absolute;
   width: 5%;
-left: 80px;
-top: 350px;
-transform: rotate(20deg);
+  left: 80px;
+  top: 350px;
+  transform: rotate(20deg);
 }
 
 .image2 {
   position: absolute;
   width: 5%;
-right: 60px;
-top: 50px;
+  right: 60px;
+  top: 50px;
 }
 
 .image8 {
   position: absolute;
   width: 5%;
-right: 60px;
-top: 350px;
-transform: rotate(-10deg);
+  right: 60px;
+  top: 350px;
+  transform: rotate(-10deg);
 
 }
 
@@ -66,31 +66,31 @@ transform: rotate(-10deg);
 /** Properties for the text in the middle **/
 
 .intro {
-text-align: center;
-color: white;
-font-size: 20px;
-margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
-.intro > p {
+.intro>p {
   font-style: italic;
   font-size: 18px;
 }
 
 
 text {
-  fill:white;
+  fill: white;
   font-size: 15px;
 }
 
 /** Properties for the buttons on the bottom **/
 
 .buttons {
-display: flex;
-flex-direction: row;
-justify-content: center;
-margin: 40px 0;
-border: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0;
+  border: transparent;
 }
 
 .blue {
@@ -99,11 +99,11 @@ border: transparent;
   background-image: url("images/blueChip.png");
   background-size: contain;
   background-repeat: no-repeat;
-background-color: transparent;
-border: transparent;
-margin-right: 10px;
-color: white;
-cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
 
 
 }
@@ -111,13 +111,13 @@ cursor: pointer;
 .red {
   width: 80px;
   height: 80px;
-background-image: url("images/redChip.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-color: transparent;
-border: transparent;
-color: white;
-cursor: pointer;
+  background-image: url("images/redChip.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  cursor: pointer;
 
 
 
@@ -126,20 +126,20 @@ cursor: pointer;
 .black {
   width: 80px;
   height: 80px;
-background-image: url("images/blackChip.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-color: transparent;
-border: transparent;
-margin-left: 10px;
-color: white;
-cursor: pointer;
+  background-image: url("images/blackChip.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
 
 }
 
 
 
-/** Shared properties for all cards **/ 
+/** Shared properties for all cards **/
 .card {
   padding: 60px;
   text-align: center;
@@ -150,7 +150,7 @@ cursor: pointer;
 }
 
 
-.column{
+.column {
   float: left;
   padding: 10px 5px;
 }
@@ -178,7 +178,7 @@ cursor: pointer;
 }
 
 
-/** Properties for the dealer cards **/ 
+/** Properties for the dealer cards **/
 
 .dealer {
   display: flex;
@@ -191,18 +191,18 @@ cursor: pointer;
 /** Properties for footer text **/
 
 
-  footer {
-    text-align: center;
-    color: white;
-    font-size: 10px;
-  }
+footer {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
 
-  /* Media Queries */
+/* Media Queries */
 
 @media (max-width: 575.98px) {
 
@@ -210,34 +210,34 @@ cursor: pointer;
     padding: 10px 5px;
   }
 
-  
-  
-  }
-  
-  
-  @media (max-width: 767.98px) {
 
-    .card {
-      padding: 60px 20px;
-    }
-  
- 
-  
+
+}
+
+
+@media (max-width: 767.98px) {
+
+  .card {
+    padding: 60px 20px;
   }
 
 
-  @media (max-width: 1100px) {
-  
-    .container-left {
-      margin-left: 20px;
-    }
-    
-    .container-right {
-      margin-right: 20px;
-    }
 
-    .card {
-      padding: 60px 50px;
-    }
-  
+}
+
+
+@media (max-width: 1100px) {
+
+  .container-left {
+    margin-left: 20px;
   }
+
+  .container-right {
+    margin-right: 20px;
+  }
+
+  .card {
+    padding: 60px 50px;
+  }
+
+}

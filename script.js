@@ -59,14 +59,14 @@
         sumDealer = dealerCards.reduce((sum, currentValue) =>
             sum + currentValue);
 
-        if (sumCards == undefined ) {
+        if (sumCards == undefined) {
             alert("Please hit some cards before you press stand, except if you want to lose...");
         } else if (sumDealer < sumCards) {
             dealerCard();
-          }  else if (sumDealer == 21 || sumDealer == sumCards || sumDealer > sumCards && sumDealer < 21) {
-            alert("Dealer wins! That means you lose... ");
+        } else if (sumDealer == 21 || sumDealer == sumCards || sumDealer > sumCards && sumDealer < 21) {
+            alert("Dealer wins! That means you lose... \nYou had " + sumCards + ". Dealer had " + sumDealer +".");
         } else {
-            alert("You win! Great job!");
+            alert("You win! Great job! \nYou had " + sumCards + ". Dealer had " + sumDealer + ".");
         }
 
     }
